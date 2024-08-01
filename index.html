@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteia números</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sorteio de números</h2>
+        <div class="draw-number">
+            Sortear
+            <input type="number" name="min" id="draw_number_input" value="1" min="1" onchange="textDrawNumber()" onblur="buttonEnable(); drawNumbersLessThan0();">
+            <span id="text_draw_number">número</span>
+        </div>
+        <div class="inputs-group">
+            <div class="input-field">
+                <label for="min">Mín:</label>
+                <input type="number" name="max" id="min" onblur="checkInputMin()">
+                <p id="error_min"></p>
+            </div>
+            <div class="input-field">
+                <label for="max">Máx:</label>
+                <input type="number" name="min" id="max" onblur="checkInputMax()">
+                <p id="error_max"></p>
+            </div>
+        </div>
+        
+        <button id="btn_draw_numbers" disabled="true" >Sortear</button>
+        <p id="result">00</p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

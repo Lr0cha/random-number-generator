@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/*configurações iniciais*/
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    background-color:  #201b2c;
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

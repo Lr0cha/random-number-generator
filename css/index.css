@@ -1,0 +1,117 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    min-width: 40vw;
+    align-items: center;
+    background-color: #2f2841;
+    padding: 20px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+    color:#f0f0f0;
+    margin: auto;
+}
+
+h2{
+    font-size: 50px;
+    font-family: "Lobster", sans-serif;
+    margin-bottom: 24px;
+}
+
+.draw-number {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.draw-number > input{
+    max-width: 70px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.inputs-group{
+    display: flex;
+    gap: 50px;
+    width: 100%;
+}
+
+#error_min,#error_max{
+    color:red;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.input-field > input{
+    font-size:20px;
+    max-width: 100%;
+    border: none;
+    outline: none;
+    color:#fff;
+    background-color: transparent;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.container button{
+    margin:25px;
+    color:#f0f0f0;
+    width:100%;
+    background-color: #7333ff;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: "Lobster", sans-serif;
+    cursor: pointer;
+}
+
+.container button[disabled]{
+    opacity: 0.5;
+    cursor: auto;
+}
+
+.container button:not(:disabled):hover {
+    opacity: 0.9;
+}
+
+.container > p{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    h2{
+        display: none;
+    }
+    #text_draw_number{
+        display: none;
+    }
+    #result{
+        font-size: 20px;
+    }
+    .draw-number {
+        flex-direction: column; /* Empilha os itens verticalmente em telas pequenas */
+        align-items: flex-start; 
+    }
+
+    .draw-number > input{
+        max-width: 50px;
+    }
+
+    .inputs-group {
+        flex-direction: column;
+        gap: 10px; /* Reduz o espaçamento entre os campos */
+    }
+
+    .input-field {
+        max-width: none; /* Remove a largura máxima */
+    }
+
+    .container {
+        padding: 10px; /* Reduz o padding em telas menores */
+    }
+}
