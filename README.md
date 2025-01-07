@@ -12,7 +12,7 @@ Este projeto foi desenvolvido para praticar e aplicar conhecimentos em HTML, CSS
 
 ## Link para GitHub Pages
 
-Você pode visualizar a aplicação através do GitHub Pages [aqui](https://lr0cha.github.io/sorteio-de-numeros/).
+Você pode visualizar a aplicação através do GitHub Pages [aqui](https://lr0cha.github.io/random-number-generator/).
 
 ## Contribuições
 Sinta-se à vontade para contribuir com melhorias ou reportar problemas.
